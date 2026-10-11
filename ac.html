@@ -10,37 +10,38 @@
     href="img/BloxyCola.ico"
     type="image/x-icon"
     />
-    <!-- FRAMEWORLD DE GUNSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--LIBRERIA DE ICONOS -->
-    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-    <!--Style-->
-    <link rel="stylesheet" href="css/off.css">
     <!--google scream-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- FRAMEWORLD DE GUNSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Style-->
+    <link rel="stylesheet" href="css/off.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-
 <body>
+<main>
 <article class="container">
   <section class="row">
      <h1>Formulario de inscripción del curso</h1>
      <p style="text-align:center"> Rellene cuidadosamente el formulario de inscripción</p> 
-    <hr/>
-    <br>
+    <hr/><br>
     <h2>Nombre del alumno</h2>
     <form action="purificar.php/bat.php" method="post" class="contact-form" id="contact-form"></form>
    <div class="row justify-content-between">
     <div class="col-4">
-      <input type="text">
+      <input type="text" name="Nombre" id="Nombre">
+      <label for="Nombre"></label>
     </div>  
     <div class="col-4">
-      <input type="text">
+      <input type="text" name="Segundo Nombre" id="Segundo Nombre">
+      <label for="Segundo Nombre"></label>
     </div>
     <div class="col-4">
-      <input type="text">
+      <input type="text" name="Apellidos" id="Apellidos">
+      <label for="Apellidos" ></label>
    <section class="row">
     </div>
    </div>    
@@ -56,7 +57,7 @@
     </div>
   </section>
     <br>
-    <section class="col-xs-12 col-sm5 col-md-5">
+    <section class="col-xs-12 col-sm6 col-md-6">
      <h2>Fecha de nacimiento</h2>
       <input type="date">
       <p>Fecha</p>
@@ -79,7 +80,6 @@
    <input type="text">
     <p>Direccion de la calle linea 2</p>
   </section>
-  
   <section class="col-xs-12 col-sm6 col-md-6">
       <input type="text">
       <p>Ciudad</p>
@@ -90,7 +90,6 @@
   </section>
    <input type="text">
     <p>Codigo postal</p>
-    
     <section class="col-xs-12 col-sm6 col-md-6">
      <h2>Email</h2>
       <input type="email">
@@ -106,12 +105,10 @@
   <br>
    <h2>Has recibido cursos anteriormente</h2>
     <section class="col-xs-12 col-sm6 col-md-6">
-
   <div>
     <input type="checkbox">
     <label>Si</label>
   </div>
-
     </section>
     <section class="col-xs-12 col-sm6 col-md-6">
   <div>
@@ -138,9 +135,10 @@
   <h2>Comentarios adicionales</h2>
   <textarea name="" id=""></textarea>
     <section class="col-xs-12 col-sm12 col-md-12">
-      <input type="submit" class="boton" value="Enviar" font-family: "Underdog", system-ui;>
+      <input type="submit" class="boton" value="Enviar">
     </section>
  </section>
 </article>
+</main>
 </body>
 </html>
