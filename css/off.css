@@ -11,7 +11,6 @@
 *{
     margin: flex;
     box-sizing:border-box;
-    padding-top: 3.5px;
 }
 
 body{
@@ -19,42 +18,26 @@ body{
 }
 
 .container{
-    padding: 1.4em;
     background-color: var(--ColorFondo);
     max-width: 50%;
-    border-radius: 10px;
-    height: 100em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-bottom: 3em;
+    padding-top: 3em;
 }
 
 h1{
-    display: flex;
-    align-items: center;
+
     justify-content: center;
     color: var(--colorTextoR);
     font-size: 2.5em;
 }
 
 h2{
-    display: flex;
+
     color: var(--colorTextoR);
     font-size: 1.3em;
 }
-
-h3{
-    display: flex;
-    color: var(--colorTextoR);
-    font-size: 1.3em;
-}
-
-h4{
-    display: flex;
-    color: var(--colorTextoR);
-    font-size: 1.3em; 
-}
-
 
 p{
     color: var(--colorTextoE);
@@ -62,9 +45,4 @@ p{
 
 hr{
     background-color: var(--colorTextoR);
-}
-select{
-    size: 1px;
-    size-adjust: 1;
-
 }
