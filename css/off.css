@@ -1,0 +1,70 @@
+/*colors*/
+:root{
+    --ColorFondo: #f7f7f8;
+    --colorTextoR: #565658;
+    --colorTextoE: #707072;
+    --colorPrueba: #fff;
+
+}
+
+/* CONECTOR UNIVERSAL */
+*{
+    margin: flex;
+    box-sizing:border-box;
+    padding-top: 3.5px;
+}
+
+body{
+    background-color: var(--ColorFondo);
+}
+
+.container{
+    padding: 1.4em;
+    background-color: var(--ColorFondo);
+    max-width: 50%;
+    border-radius: 10px;
+    height: 100em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorTextoR);
+    font-size: 2.5em;
+}
+
+h2{
+    display: flex;
+    color: var(--colorTextoR);
+    font-size: 1.3em;
+}
+
+h3{
+    display: flex;
+    color: var(--colorTextoR);
+    font-size: 1.3em;
+}
+
+h4{
+    display: flex;
+    color: var(--colorTextoR);
+    font-size: 1.3em; 
+}
+
+
+p{
+    color: var(--colorTextoE);
+}
+
+hr{
+    background-color: var(--colorTextoR);
+}
+select{
+    size: 1px;
+    size-adjust: 1;
+
+}
