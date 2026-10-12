@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = trim($_POST["message"]);
 
     // Correo de destino (donde quieres recibir los mensajes)
-    $destinatario = "dani619349@gmail.com";
+    $destinatario = "adele.adel.saenz@gmail.com";
     $asunto = "Nuevo mensaje de contacto de: $nombre";
 
     // Construir el cuerpo del mensaje

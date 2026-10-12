@@ -46,3 +46,7 @@ p{
 hr{
     background-color: var(--colorTextoR);
 }
+
+button{
+    align-items: center;
+}

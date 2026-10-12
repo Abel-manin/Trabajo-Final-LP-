@@ -6,7 +6,7 @@ formulario.addEventListener('submit', function(e) {
 
     // 2. Disparamos el SweetAlert2 que elegiste
     Swal.fire({
-  icon: "errors st",
+  icon: "error",
   title: "Oops...",
   text: "Something went wrong!",
   footer: "<a href=\"#\">Why do I have this issue?</a>"

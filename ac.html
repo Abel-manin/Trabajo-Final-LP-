@@ -24,119 +24,122 @@
 <body>
 <main>
 <article class="container">
+  <!--Nombres-->
   <section class="row">
      <h1>Formulario de inscripción del curso</h1>
      <p style="text-align:center"> Rellene cuidadosamente el formulario de inscripción</p> 
     <hr/><br>
     <h2>Nombre del alumno</h2>
-    <form action="purificar.php/bat.php" method="post" class="contact-form" id="contact-form"></form>
+    <form action="purificar.php/bat.php" method="post" class="contact-form" id="contact-form">
    <div class="row justify-content-between">
     <div class="col-4">
-      <input type="text" name="Nombre" id="Nombre">
-      <label for="Nombre"></label>
+      <input type="text" name="Nombre" id="Nombre"><p>Nombre</p>
     </div>  
     <div class="col-4">
-      <input type="text" name="Segundo Nombre" id="Segundo Nombre">
-      <label for="Segundo Nombre"></label>
+      <input type="text" name="Segundo Nombre" id="Segundo Nombre"><p>Segundo Nombre</p>
     </div>
     <div class="col-4">
-      <input type="text" name="Apellidos" id="Apellidos">
-      <label for="Apellidos" ></label>
+      <input type="text" name="Apellidos" id="Apellidos"><p>Apellidos</p>
    <section class="row">
     </div>
    </div>    
-  <section class="row">
-    <div class="col-4">
-    <p>Nombre</p>
-    </div>  
-    <div class="col-4">
-    <p>Segundo Nombre</p>
-    </div>
-    <div class="col-4">
-    <p>Apellidos</p>
-    </div>
-  </section>
     <br>
-    <section class="col-xs-12 col-sm6 col-md-6">
+  <!--Fecha y genero-->
+  <section class="row justify-content-around">
+    <section class="col-6">
      <h2>Fecha de nacimiento</h2>
-      <input type="date">
+      <input type="date" name="Fecha">
       <p>Fecha</p>
-    </section>
-    <section class="col-xs-12 col-sm5 col-md-5">
+      </section>
+    <section class="col-6">
       <h2>Genero</h2>
-    <section class="row justify-content-around">
-    <select name="seleccione" id="123">
+    <section class="col-6">
+    <select name="seleccione">
      <option value="value1">Chica</option>
      <option value="value2" selected>Chico</option>
      <option value="value3">Otros</option>
     </select>
     </section>
+    </section>
   </section>
   <br>
+  <!--Direccion1-->
   <h2>Direccion</h2>
   <section class="row">
-   <input type="text">
+   <input type="text" name="Direccion1">
     <p>Direccion de la calle</p>
-   <input type="text">
+   <input type="text" name="Direccion2">
     <p>Direccion de la calle linea 2</p>
   </section>
-  <section class="col-xs-12 col-sm6 col-md-6">
-      <input type="text">
+  <!--Direccion2-->
+  <section class="row justify-content-around">
+  <section class="col-6">
+      <input type="text" name="Ciudad">
       <p>Ciudad</p>
   </section>
-  <section class="col-xs-12 col-sm6 col-md-6">
-      <input type="text">
+  <section class="col-6">
+      <input type="text" name="Estado">
       <p>Estado provincial</p>
   </section>
-   <input type="text">
+  </section>
+  <!--Direccion3-->
+  <section class="row justify-content-around">
+   <input type="text" name="postal">
     <p>Codigo postal</p>
-    <section class="col-xs-12 col-sm6 col-md-6">
-     <h2>Email</h2>
-      <input type="email">
+  </section>
+  <!--email y fono-->
+  <section class="row justify-content-around">
+    <section class="col-6">
+    <h2>Email</h2>
+      <input type="email" name="Email">
       <p>ejemplo@ejemplo.com</p>
     </section>
-    <section class="col-xs-12 col-sm6 col-md-6">
+    <section class="col-6">
       <h2>Numero de telefono</h2>
+      <input type="tel" placeholder="(00) 000-000" name="Estado">
+      <p>Estado provincial</p>
+  </section>
+  </section>
+  <br>
+  <!--Exp-->
     <section class="row justify-content-around">
-     <input type="tel" placeholder="(00) 000-000">
-     <p>Favor de ingresar un numero valido</p>
+    <h2>Has recibido cursos anteriormente</h2>
+      <select name="curso_seleccionado">
+        <option>Seleccione</option>
+        <option>Curso 1</option>
+        <option>Curso 2</option>
+      </select>
     </section>
+     <br>
+  <!--Empresas y cursos-->
+  <section class="row justify-content-around">
+  <section class="col-6">
+      <h2>Empresa</h2>
+      <input type="text" name="Empresa">
+      <p>Empresas</p>
   </section>
-  <br>
-   <h2>Has recibido cursos anteriormente</h2>
-    <section class="col-xs-12 col-sm6 col-md-6">
-  <div>
-    <input type="checkbox">
-    <label>Si</label>
-  </div>
-    </section>
-    <section class="col-xs-12 col-sm6 col-md-6">
-  <div>
-    <input type="checkbox">
-    <label>no</label>
-  </div>
-  </section>
-  <br>
-      <section class="col-xs-12 col-sm5 col-md-5">
-     <h2>Empresa</h2>
-      <input type="text">
-    </section>
-    <section class="col-xs-12 col-sm5 col-md-5">
+  <section class="col-6">
       <h2>Cursos</h2>
-    <section class="row justify-content-around">
-    <select name="seleccione" id="123">
-     <option value="value1">Principiante</option>
-     <option value="value2">Medio</option>
-     <option value="value3">Avanzado</option>
-    </select>
-    </section>
+      <select name="Cursos">
+        <option>Seleccione</option>
+        <option>Curso 1</option>
+        <option>Curso 2</option>
+      </select>
+  </section>
   </section>
   <br>
-  <h2>Comentarios adicionales</h2>
-  <textarea name="" id=""></textarea>
-    <section class="col-xs-12 col-sm12 col-md-12">
-      <input type="submit" class="boton" value="Enviar">
-    </section>
+  <!--Area text-->
+
+   <section class="row justify-content-around">
+    <section class="col-12">
+    <h2>Comentarios adicionales</h2>
+    <section class="row justify-content-around">
+    <textarea name="Area Text""></textarea>
+   </section>
+   <hr>
+   <button type="submit" style="align-items: center;" name="Enviar">Enviar</button>
+  </section>
+ </form>  
  </section>
 </article>
 </main>
